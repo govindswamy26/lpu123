@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Kasi Baba's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Kasi <span>Baba</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#android">Android</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="#certifications">Certs</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#android">Android</a>
+                <a href="#DataScience">Projects</a>
+                <a href="#projects">Projects</a>      
+                <a href="#certifications">Certs</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="kasi.jpeg" alt="Kasi Baba">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Kasi</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label>|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am a passionate Computer Science student specializing in software development, with practical experience gained through diverse projects and certifications.</p>
+                <div class="social-links">
+                    <a href="https://github.com/kasibaba26" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <!-- <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a> -->
+                    <a href="https://www.linkedin.com/in/kasi-baba-4b0550252/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Kasi_baba_26" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="location.href='#contact'">Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-down">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="kasi.jpeg" alt="Kasi Baba">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>CS Student & Developer</h3>
+                    <p>I'm a Computer Science student currently pursuing my B.Tech, focused on building useful applications through coding. I improve my skills by working on projects and earning certifications in mobile development, data science, and programming. I've strengthened my problem-solving skills through consistent work on algorithms and data structures using C++, and I work with technologies like Kotlin.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <p><span>Name:</span> Kasi Baba</p>
+                            <p><span>Degree:</span> B.Tech Computer Science</p>
+                            <p><span>University:</span> Lovely Professional University</p>
+                        </div>
+                        <div class="detail-item">
+                            <p><span>Email:</span> kasibaba567@gmail.com</p>
+                            <p><span>From:</span> Andhra Pradesh, India</p>
+                            <p><span>Freelance:</span> Available</p>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="window.open('kasi_cv_new.pdf')">Download CV <i class="fas fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-down">My <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-category" data-aos="fade-right">
+                    <h3><i class="fas fa-laptop-code"></i> Development</h3>
+                    <div class="skill-item">
+                        <p>Android (Kotlin) <span>75%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>C++ <span>90%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <p>JavaScript <span>60%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <p>Java <span>80%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <p>R <span>65%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+
+                </div>
+                <div class="skills-category" data-aos="fade-left">
+                    <h3><i class="fas fa-database"></i> Other Tech</h3>
+                    <div class="skill-item">
+                        <p>Tableau <span>75%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>SQL <span>85%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Power BI <span>70%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Git/GitHub <span>80%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Excel <span>80%</span></p>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+   <!-- Data science Projects Section -->
+<!-- Data Science Projects Section -->
+<section id="data-science">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-down">Data Science <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="moviexp.jpeg" alt="Movie Recommendation System">
+                </div>
+                <div class="project-content">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Hybrid recommendation engine using collaborative and content-based filtering. Integrated with a Flask API to deliver real-time, personalized movie suggestions.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba/movie-recommendation" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="sentiment.jpeg" alt="Sentiment Analysis R">
+                </div>
+                <div class="project-content">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Performed sentiment classification using R on social media data to uncover public opinions. Leveraged text mining and visualization techniques.</p>
+                    <div class="project-tech">
+                        <span>R</span>
+                        <span>Tidytext</span>
+                        <span>Dplyr</span>
+                        <span>ggplot2</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba/sentiment-analysis-r" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="edg r.jpeg" alt="EDA in R">
+                </div>
+                <div class="project-content">
+                    <h3>Exploratory Data Analysis in R</h3>
+                    <p>Comprehensive EDA using R on structured datasets to uncover insights through visualization and summary statistics.</p>
+                    <div class="project-tech">
+                        <span>R</span>
+                        <span>ggplot2</span>
+                        <span>dplyr</span>
+                        <span>tidyr</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba/eda-r" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-image">
+                    <img src="netflix dash.jpeg" alt="Netflix Dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Netflix Dashboard</h3>
+                    <p>Built an interactive Tableau dashboard to analyze Netflix content, genres, countries, and release trends over time.</p>
+                    <div class="project-tech">
+                        <span>Tableau</span>
+                        <span>Data Cleaning</span>
+                        <span>Visualization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://public.tableau.com/app/profile/kasibaba7021/viz/NetflixMoviesandTVShows_17312422809160/netflixdashboard" target="_blank"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+             <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-image">
+                    <img src="excel.png" alt="Excel Dashboard">
+                </div>
+                <div class="project-content">
+                    <h3> E-Commerce Store Analysis</h3>
+                    <p>An interactive Excel dashboard showcasing cleaned and validated ecommerce data. It highlights sales trends, channel performance, fulfillment efficiency, and key business insights for smarter decision-making.</p>
+                    <div class="project-tech">
+                        <span>Tableau</span>
+                        <span>Data Cleaning</span>
+                        <span>Visualization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba26/Excel-Dashboard-Project" target="_blank"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                <div class="project-image">
+                    <img src="powerbi.png" alt="Mobile Sales and Usage Dashboard">
+                      <img src="powerbi2.png" alt="Mobile Sales and Usage Dashboard">
+                  
+                </div>
+                <div class="project-content">
+                    <h3>Mobile Sales & Usage Dashboard</h3>
+                    <p>Created a Power BI dashboard to visualize mobile sales and usage metrics across regions and demographics, enabling informed business decisions.</p>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Data Modeling</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba26/Powe-BI-dashboard" target="_blank"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Android Projects Section -->
+<section id="android">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-down">Android <span>Projects</span></h2>
+        <div class="projects-container">
+           
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="food.jpeg" alt="Food Delivery App">
+                </div>
+                <div class="project-content">
+                    <h3>Food Delivery App</h3>
+                    <p>Android app for ordering food online with user-friendly UI, restaurant listing, order tracking, and secure payment integration.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Firebase</span>
+                        <span>Google Maps API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba/food-delivery-app" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="train.jpeg" alt="Rail Scheduler App">
+                </div>
+                <div class="project-content">
+                    <h3>Rail Scheduler App</h3>
+                    <p>Railway scheduling and tracking app allowing users to check train timings, live status, and plan journeys efficiently with alerts and reminders.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>REST API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba/rail-scheduler-app" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Other Projects Section -->
+<section id="projects">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-down">Other <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="bank.png" alt="Banking Application">
+                </div>
+                <div class="project-content">
+                    <h3>Banking Application</h3>
+                    <p>Secure and scalable banking system with multi-layered authentication, fund transfers, and real-time transaction tracking, built using Java and MySQL.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>JDBC</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba26/Bank-Management-System" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="cpp.jpeg" alt="Library Management System">
+                </div>
+                <div class="project-content">
+                    <h3>Library Management System</h3>
+                    <p>Console-based C++ project to manage library records including book issue/return, member tracking, and inventory updates.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>File Handling</span>
+                        <span>OOP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kasibaba26/Library-Management-System" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Certifications Section -->
+<section id="certifications">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-down">My <span>Certifications</span></h2>
+        <div class="certifications-container">
+            <div class="certification-card" data-aos="flip-left">
+                <div class="certification-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Android Development</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Coursera</p>
+                    <p><span>Date:</span> Sept 2024</p>
+                    <p><span>Skills:</span> Kotlin, Fundamentals of Android</p>
+                      <a href="#" class="view-cert"> <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+           
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="certification-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Coursera</p>
+                    <p><span>Date:</span> Jan 2024</p>
+                    <p><span>Skills:</span> R,ML</p>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="view-cert"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="600">
+                <div class="certification-header">
+                    <i class="fas fa-cogs"></i>
+                    <h3> Data Structures and Algorithms</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Programming Pathashala</p>
+                    <p><span>Date:</span> Augut 2024</p>
+                    <p><span>Skills:</span> Algorithms, Data Structures, C++</p>
+                    <a href="2323https://certificates.programmingpathshala.com/v1/doc?id=9d8b399f99d59ee1eb52c8a7f54211aa0b3fad91ec6720f81672d64dd3c96f89" class="view-cert">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                      <a href="3534https://www.udemy.com/certificate/UC-b1184712-a91e-4521-8bbf-00cc172a7ede/" class="view-cert"> <i class="fas fa-external-link-alt"></i></a>
+                    
+
+                </div>
+            </div>
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="800">
+                <div class="certification-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Java Programming Certification</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Udemy</p>
+                    <p><span>Date:</span> May 2024</p>
+                    <p><span>Skills:</span> Java, OOP Concepts</p>
+                    <a href="434https://www.udemy.com/certificate/UC-7154e7b1-b340-41b9-9ca0-4968f88b9577/" class="view-cert">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="1000">
+                <div class="certification-header">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Java Spring Boot</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Udemy</p>
+                    <p><span>Date:</span> May 2024</p>
+                    <p><span>Skills:</span> Spring Boot, Microservices</p>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="1200">
+                <div class="certification-header">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Object-Oriented Programming in C++</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Udemy, Coursera</p>
+                    <p><span>Date:</span> Dec 2023</p>
+                    <p><span>Skills:</span> OOP, C++ Fundamentals</p>
+                    <a href="355https://www.udemy.com/certificate/UC-b1184712-a91e-4521-8bbf-00cc172a7ede/" class="view-cert">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="1400">
+                <div class="certification-header">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>R Programming</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Coursera</p>
+                    <p><span>Date:</span> April 2024</p>
+                    <p><span>Skills:</span> R, Data Analysis, Visualization</p>
+                    <a href="435https://www.coursera.org/account/accomplishments/verify/HQWMYVV3759G" class="view-cert" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certification-card" data-aos="flip-left" data-aos-delay="1600">
+                <div class="certification-header">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Tableau Certification</h3>
+                </div>
+                <div class="certification-body">
+                    <p><span>Issuer:</span> Coursera</p>
+                    <p><span>Date:</span> May 2024</p>
+                    <p><span>Skills:</span> Data Visualization, Dashboards</p>
+                    <a href="6454https://www.coursera.org/account/accomplishments/verify/YHY2O62FF4B2" class="view-cert" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-down">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Get in Touch</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>kasibaba567@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 9032443856</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Punjab, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+                <form action="46757https://formsubmit.co/kasibaba567@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://your-portfolio-url.com/thankyou.html">
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Kasi <span>Baba</span>
+                </div>
+                <p>Computer Science Student & Passionate Developer</p>
+                <div class="footer-social">
+                    <a href="https://github.com/kasibaba" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#android">Android</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Kasi Baba. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
